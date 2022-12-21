@@ -30,6 +30,7 @@ public class AutomationTestCase {
                   driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
                   lp = new LoginPage(driver);
                   pp = new ProductPage(driver);
+                  ph = new PageHeader(driver);
     }
   // Login to the Site.
   @Test(priority = 1)
@@ -37,12 +38,12 @@ public class AutomationTestCase {
    {
    lp.loginToSite("performance_glitch_user","secret_sauce");
    }
-//  @Test(priority = 2)
-//  public void HomePageVerify()
-//  {
-//                 String HomeText = ph.pageverify();
-//                 Assert.assertEquals(HomeText, "Product");
-//  }
+  @Test(priority = 2)
+  public void HomePageVerify()
+  {
+                 String HomeText = ph.verifyPageHeader();
+                 Assert.assertEquals(HomeText, "PRODUCTS");
+  }
   
   @Test(priority = 3)
   public void selectProducts()

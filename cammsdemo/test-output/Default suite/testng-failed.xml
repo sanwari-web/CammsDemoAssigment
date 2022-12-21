@@ -6,9 +6,8 @@
       <class name="testcases.AutomationTestCase">
         <methods>
           <include name="browserlaunch"/>
-          <include name="selectProducts"/>
-          <include name="buyProducts"/>
           <include name="screenshot"/>
+          <include name="HomePageVerify"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testcases.AutomationTestCase -->

@@ -9,14 +9,15 @@ public class PageHeader {
 
 	By PageHeader = By.xpath("//span[text()='Products']");
 
+	public PageHeader(WebDriver driver)
+	{
+	              this.driver = driver;
+	}
+	
 	//Constructor to initialize object
-	public void PageHeader(WebDriver dr)
-	              {
-	                             this.driver=dr;
-	               }
-	              public String pageverify()
-	              {
-	                            return driver.findElement(PageHeader).getText();
-	               }
+	public String verifyPageHeader()
+    {
+                  return driver.findElement(PageHeader).getText();
+     }
 	             
 }

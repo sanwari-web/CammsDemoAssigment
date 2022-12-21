@@ -56,8 +56,10 @@ public class AutomationTestCase {
   @Test(priority = 4)
   public void buyProducts()
   {
-             String product=pp.verifyCartProducts();
-             Assert.assertEquals(product, "Sauce Labs Fleece Jacket");
+             String product1=pp.verifyCartProduct1();
+             Assert.assertEquals(product1, "Sauce Labs Fleece Jacket");
+             String product2=pp.verifyCartProduct2();
+             Assert.assertEquals(product2, "Sauce Labs Backpack");
              pp.clickCheckOut();
              pp.enterFirstName("Test1");
              pp.enterLastName("CammsAutoTest");

@@ -7,10 +7,12 @@ public class ProductPage {
 
 	WebDriver driver;
 	By ProductPrice = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::div[text()='49.99']");
-	By AddToCart = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::button[text()='Add to cart']");
+	By AddToCart1 = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::button[text()='Add to cart']");
+	By AddToCart2 = By.xpath("//div[text()='Sauce Labs Backpack']/../../following::button[text()='Add to cart']");
 	By ShoppingCart = By.xpath("//a[@class='shopping_cart_link']");
-	By CartProducts = By.xpath("//div[@class='cart_item']//child::div[text()='Sauce Labs Fleece Jacket']");
-	By CheckOutButton = By.xpath("//button[@id='checkout']");
+	By CartProducts1 = By.xpath("//div[@class='cart_item']//child::div[text()='Sauce Labs Fleece Jacket']");
+	By CartProducts2 = By.xpath("//div[@class='cart_item']//child::div[text()='Sauce Labs Backpack']");
+    By CheckOutButton = By.xpath("//button[@id='checkout']");
 	By FirstName = By.xpath("//input[@id='first-name']");
 	By LastName = By.xpath("//input[@id ='last-name']");
 	By PostalCode = By.xpath("//input[@id='postal-code']");
@@ -31,7 +33,8 @@ public class ProductPage {
 	
 	public void buyProducts(String Firstname, String Lastname, String Postalcode)
 	{
-	                this.verifyCartProducts();
+	                this.verifyCartProduct1();
+	                this.verifyCartProduct2();
 	                this.clickCheckOut();
 	                this.enterFirstName(Firstname);
 	                this.enterLastName(Lastname);
@@ -44,13 +47,18 @@ public class ProductPage {
     {
                   return driver.findElement(ProductPrice).getText();
      }
-	public String verifyCartProducts()
+	public String verifyCartProduct1()
     {
-                  return driver.findElement(CartProducts).getText();
+                  return driver.findElement(CartProducts1).getText();
+     }
+	public String verifyCartProduct2()
+    {
+                  return driver.findElement(CartProducts2).getText();
      }
     public void clickAddToCart()
     {
-               driver.findElement(AddToCart).click();
+               driver.findElement(AddToCart1).click();
+               driver.findElement(AddToCart2).click();
     }
 	public void clickShoppingCart()
 	{

@@ -2,76 +2,76 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-21T20:09:25 IST" name="Default suite" finished-at="2022-12-21T20:09:40 IST" duration-ms="14562">
+  <suite started-at="2022-12-21T20:20:39 IST" name="Default suite" finished-at="2022-12-21T20:21:14 IST" duration-ms="34903">
     <groups>
     </groups>
-    <test started-at="2022-12-21T20:09:25 IST" name="Default test" finished-at="2022-12-21T20:09:40 IST" duration-ms="14562">
+    <test started-at="2022-12-21T20:20:39 IST" name="Default test" finished-at="2022-12-21T20:21:14 IST" duration-ms="34903">
       <class name="testcases.AutomationTestCase">
-        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:25 IST" name="browserlaunch" finished-at="2022-12-21T20:09:28 IST" duration-ms="3257" status="PASS">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:39 IST" name="browserlaunch" finished-at="2022-12-21T20:20:43 IST" duration-ms="3572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="Login()[pri:1, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:28 IST" name="Login" finished-at="2022-12-21T20:09:34 IST" duration-ms="5394" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:43 IST" name="Login" finished-at="2022-12-21T20:20:48 IST" duration-ms="5379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:34 IST" name="screenshot" finished-at="2022-12-21T20:09:34 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:48 IST" name="screenshot" finished-at="2022-12-21T20:20:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=AutomationTestCase.Login()[pri:1, instance:testcases.AutomationTestCase@7c711375] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=AutomationTestCase.Login()[pri:1, instance:testcases.AutomationTestCase@5b03b9fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method signature="HomePageVerify()[pri:2, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:34 IST" name="HomePageVerify" finished-at="2022-12-21T20:09:36 IST" duration-ms="2084" status="PASS">
+        <test-method signature="HomePageVerify()[pri:2, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:49 IST" name="HomePageVerify" finished-at="2022-12-21T20:20:52 IST" duration-ms="3321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageVerify -->
-        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:36 IST" name="screenshot" finished-at="2022-12-21T20:09:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:52 IST" name="screenshot" finished-at="2022-12-21T20:20:52 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HomePageVerify status=SUCCESS method=AutomationTestCase.HomePageVerify()[pri:2, instance:testcases.AutomationTestCase@7c711375] output={null}]]]>
+                <![CDATA[[TestResult name=HomePageVerify status=SUCCESS method=AutomationTestCase.HomePageVerify()[pri:2, instance:testcases.AutomationTestCase@5b03b9fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method signature="selectProducts()[pri:3, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:36 IST" name="selectProducts" finished-at="2022-12-21T20:09:38 IST" duration-ms="2001" status="PASS">
+        <test-method signature="selectProducts()[pri:3, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:52 IST" name="selectProducts" finished-at="2022-12-21T20:20:55 IST" duration-ms="2745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProducts -->
-        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:38 IST" name="screenshot" finished-at="2022-12-21T20:09:38 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectProducts status=SUCCESS method=AutomationTestCase.selectProducts()[pri:3, instance:testcases.AutomationTestCase@7c711375] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method signature="buyProducts()[pri:4, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:38 IST" name="buyProducts" finished-at="2022-12-21T20:09:39 IST" duration-ms="1526" status="PASS">
+        <test-method signature="buyProducts()[pri:4, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:55 IST" name="buyProducts" finished-at="2022-12-21T20:20:58 IST" duration-ms="3622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyProducts -->
-        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:39 IST" name="screenshot" finished-at="2022-12-21T20:09:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:55 IST" name="screenshot" finished-at="2022-12-21T20:20:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=buyProducts status=SUCCESS method=AutomationTestCase.buyProducts()[pri:4, instance:testcases.AutomationTestCase@7c711375] output={null}]]]>
+                <![CDATA[[TestResult name=selectProducts status=SUCCESS method=AutomationTestCase.selectProducts()[pri:3, instance:testcases.AutomationTestCase@5b03b9fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.AutomationTestCase@7c711375]" started-at="2022-12-21T20:09:39 IST" name="closeBrowser" finished-at="2022-12-21T20:09:40 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:58 IST" name="screenshot" finished-at="2022-12-21T20:20:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyProducts status=SUCCESS method=AutomationTestCase.buyProducts()[pri:4, instance:testcases.AutomationTestCase@5b03b9fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.AutomationTestCase@5b03b9fe]" started-at="2022-12-21T20:20:58 IST" name="closeBrowser" finished-at="2022-12-21T20:21:14 IST" duration-ms="16185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

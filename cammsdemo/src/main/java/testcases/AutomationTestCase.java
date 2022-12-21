@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import pages.ProductPage;
 import pages.LoginPage;
 import pages.PageHeader;
+import org.apache.commons.lang.RandomStringUtils;
 
 public class AutomationTestCase {
 	
@@ -62,9 +63,11 @@ public class AutomationTestCase {
              String product2=pp.verifyCartProduct2();
              Assert.assertEquals(product2, "Sauce Labs Backpack");
              pp.clickCheckOut();
-             pp.enterFirstName("Test1");
+             String randomStr = RandomStringUtils.randomAlphabetic(5);
+             pp.enterFirstName("Test" + "" + randomStr);
              pp.enterLastName("CammsAutoTest");
-             pp.enterPostalCode("12536");
+             String randompostalcode = RandomStringUtils.randomNumeric(5);
+             pp.enterPostalCode(randompostalcode);
              pp.clickContinue();
              pp.clickFinish();
    }

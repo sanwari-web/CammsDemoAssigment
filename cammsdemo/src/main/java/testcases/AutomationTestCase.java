@@ -39,6 +39,8 @@ public class AutomationTestCase {
    {
    lp.loginToSite("performance_glitch_user","secret_sauce");
    }
+  
+  //Verify navigated page header 
   @Test(priority = 2)
   public void HomePageVerify()
   {
@@ -46,29 +48,53 @@ public class AutomationTestCase {
                  Assert.assertEquals(HomeText, "PRODUCTS");
   }
   
+  //Select products to the cart
   @Test(priority = 3)
   public void selectProducts()
   {
+	         //Verify the price of product Sauce Labs Fleece Jacket 
              String price=pp.verifyProductPrice();
              Assert.assertEquals(price, "$49.99");
+            
+             //Click two products to the cart
              pp.clickAddToCart();
+             
+             //Click Shopping Cart Icon
              pp.clickShoppingCart();
    }
   
+  //Product buying process
   @Test(priority = 4)
   public void buyProducts()
   {
+	         //Verify that selected products in the cart
              String product1=pp.verifyCartProduct1();
              Assert.assertEquals(product1, "Sauce Labs Fleece Jacket");
              String product2=pp.verifyCartProduct2();
              Assert.assertEquals(product2, "Sauce Labs Backpack");
+             
+             //Click Checkout Button
              pp.clickCheckOut();
+             
+             //Generate random first name
              String randomStr = RandomStringUtils.randomAlphabetic(5);
+             
+             //Enter fisrt name
              pp.enterFirstName("Test" + "" + randomStr);
+             
+             //Enter last name
              pp.enterLastName("CammsAutoTest");
+             
+             //Generate postal code of 5 digits
              String randompostalcode = RandomStringUtils.randomNumeric(5);
+             
+             //Enter generated postal code
              pp.enterPostalCode(randompostalcode);
+             
+             //Click continue button
              pp.clickContinue();
+             
+             //Click finish button
              pp.clickFinish();
    }
   
@@ -86,10 +112,12 @@ public class AutomationTestCase {
                               Screenshot.captureScreenShot(driver, x);
                 }
 }
+   
+//Close the browser
 @AfterTest
 public void closeBrowser()
 {
-       driver.close();
+       driver.quit();
 }
 
 }

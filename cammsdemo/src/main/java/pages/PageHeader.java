@@ -7,6 +7,7 @@ public class PageHeader {
 
 	WebDriver driver;
 
+	//Main page object
 	By PageHeader = By.xpath("//span[text()='Products']");
 
 	public PageHeader(WebDriver driver)

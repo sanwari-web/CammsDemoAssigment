@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class ProductPage {
 
 	WebDriver driver;
+	//xpath of the objects
 	By ProductPrice = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::div[text()='49.99']");
 	By AddToCart1 = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::button[text()='Add to cart']");
 	By AddToCart2 = By.xpath("//div[text()='Sauce Labs Backpack']/../../following::button[text()='Add to cart']");
@@ -18,6 +19,7 @@ public class ProductPage {
 	By PostalCode = By.xpath("//input[@id='postal-code']");
 	By ContinueButton = By.xpath("//input[@id='continue']");
 	By FinishButton = By.xpath("//button[@id='finish']");
+	
 	//Constructor to initialize object
 	public ProductPage(WebDriver driver)
 	{

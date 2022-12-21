@@ -26,6 +26,19 @@ public class ProductPage {
 	                this.verifyProductPrice();
 	                this.clickAddToCart();
 	                this.clickShoppingCart();
+	                
+	}
+	
+	public void buyProducts(String Firstname, String Lastname, String Postalcode)
+	{
+	                this.verifyCartProducts();
+	                this.clickCheckOut();
+	                this.enterFirstName(Firstname);
+	                this.enterLastName(Lastname);
+	                this.enterPostalCode(Postalcode);
+	                this.clickContinue();
+	                this.clickFinish();
+	                
 	}
 	public String verifyProductPrice()
     {

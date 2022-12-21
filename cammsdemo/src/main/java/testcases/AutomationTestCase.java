@@ -43,6 +43,30 @@ public class AutomationTestCase {
 //                 String HomeText = ph.pageverify();
 //                 Assert.assertEquals(HomeText, "Product");
 //   }
+  
+  @Test(priority = 2)
+  public void selectProducts()
+  {
+//             String price=pp.verifyProductPrice();
+//             Assert.assertEquals(price, "49.99");
+             pp.clickAddToCart();
+             pp.clickShoppingCart();
+   }
+  
+  @Test(priority = 3)
+  public void buyProducts()
+  {
+//             String price=pp.verifyProductPrice();
+//             Assert.assertEquals(price, "49.99");
+             pp.clickCheckOut();
+             pp.enterFirstName("Test1");
+             pp.enterLastName("CammsAutoTest");
+             pp.enterPostalCode("12536");
+             pp.clickContinue();
+             pp.clickFinish();
+   }
+  
+  
 
 //Taking Screen shot on test fail
    @AfterMethod

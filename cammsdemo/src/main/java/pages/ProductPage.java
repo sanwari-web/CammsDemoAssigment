@@ -9,7 +9,7 @@ public class ProductPage {
 	By ProductPrice = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::div[text()='49.99']");
 	By AddToCart = By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following::button[text()='Add to cart']");
 	By ShoppingCart = By.xpath("//a[@class='shopping_cart_link']");
-	By CartProducts = By.xpath("//div[@class='cart_item']//child::div[text()='Sauce Labs Backpack']");
+	By CartProducts = By.xpath("//div[@class='cart_item']//child::div[text()='Sauce Labs Fleece Jacket']");
 	By CheckOutButton = By.xpath("//button[@id='checkout']");
 	By FirstName = By.xpath("//input[@id='first-name']");
 	By LastName = By.xpath("//input[@id ='last-name']");

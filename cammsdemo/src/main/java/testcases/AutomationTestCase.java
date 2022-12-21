@@ -42,22 +42,22 @@ public class AutomationTestCase {
 //  {
 //                 String HomeText = ph.pageverify();
 //                 Assert.assertEquals(HomeText, "Product");
-//   }
+//  }
   
-  @Test(priority = 2)
+  @Test(priority = 3)
   public void selectProducts()
   {
-//             String price=pp.verifyProductPrice();
-//             Assert.assertEquals(price, "49.99");
+             String price=pp.verifyProductPrice();
+             Assert.assertEquals(price, "$49.99");
              pp.clickAddToCart();
              pp.clickShoppingCart();
    }
   
-  @Test(priority = 3)
+  @Test(priority = 4)
   public void buyProducts()
   {
-//             String price=pp.verifyProductPrice();
-//             Assert.assertEquals(price, "49.99");
+             String product=pp.verifyCartProducts();
+             Assert.assertEquals(product, "Sauce Labs Fleece Jacket");
              pp.clickCheckOut();
              pp.enterFirstName("Test1");
              pp.enterLastName("CammsAutoTest");
